@@ -1,4 +1,4 @@
-import {greeter} from './../../server'
+import {greeter} from '../server'
 
 describe('func test', () => {
     it('should return an string with name: Hello, wellerson', () => {

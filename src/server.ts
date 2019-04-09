@@ -7,6 +7,10 @@ import cors from 'kcors'
 import dotenv from 'dotenv-safe'
 const graphqlHTTP = require("koa-graphql");
 import schema from './schema'
+import mongoose from 'mongoose';
+
+
+// init router and koa
 const app = new koa();
 const router = new route()
 //init doenv
@@ -20,6 +24,8 @@ app.use(bodyparser())
 app.use(router.routes())
 app.use(router.allowedMethods());
 
+// init mongoose
+mongoose.connect('mongodb://localhost:27017/graphql');
 
 export function greeter(person: string) {
     return "Hello, " + person;

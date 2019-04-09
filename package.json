@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "nodemon --exec ts-node ./server.ts",
+    "start": "nodemon --exec ts-node ./src/server.ts",
     "tslint": "tslint --project .",
     "test": "jest",
     "test:watch": "jest --watchAll --coverage"
@@ -37,6 +37,7 @@
   "dependencies": {
     "@types/dotenv-safe": "^5.0.3",
     "@types/graphql": "^14.2.0",
+    "@types/mongoose": "^5.3.25",
     "dotenv-safe": "^6.1.0",
     "graphql": "^14.2.1",
     "kcors": "^2.2.2",
@@ -45,6 +46,7 @@
     "koa-graphql": "^0.8.0",
     "koa-json": "^2.0.2",
     "koa-logger": "^3.2.0",
-    "koa-router": "^7.4.0"
+    "koa-router": "^7.4.0",
+    "mongoose": "^5.5.0"
   }
 }
