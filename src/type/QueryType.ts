@@ -1,6 +1,6 @@
 import { GraphQLObjectType ,GraphQLList, GraphQLNonNull, GraphQLString } from 'graphql'
 import {companyType} from '../modules/company/companyTypes'
-import companiesModel from './../model' 
+import companiesModel from '../model/campanies' 
 
 export default new GraphQLObjectType({
     name: 'Companies',
